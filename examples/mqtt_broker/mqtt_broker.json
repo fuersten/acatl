@@ -1,0 +1,24 @@
+{
+    "log" : {
+        "level" : [
+            { "AsyncServer" : 2 },
+            { "Connection" : 2 },
+            { "MQTTBroker" : 2 },
+            { "acatl::mqtt::Engine" : 2 }
+        ],
+        "separator" : "|",
+        "syslog" : false
+    },
+    "secure-mqtt" : {
+        "host" : "",
+        "port" : 8883,
+        "key-file-path" : "./certs/key.pem",
+        "ca-cert-file-path" : "./certs/server.pem",
+        "ca-file-path" : "/usr/local/etc/openssl/cert.pem",
+        "no-verify" : true
+    },
+    "mqtt" : {
+        "host" : "",
+        "port" : 1883
+    }
+}

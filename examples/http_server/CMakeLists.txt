@@ -5,7 +5,7 @@ add_executable(http_server
     mime_types.h
     types.h
 )
-message(STATUS "ASIO: ${asio_SOURCE_DIR}")
+
 target_include_directories(http_server SYSTEM PRIVATE "${asio_SOURCE_DIR}/include")
 target_include_directories(http_server SYSTEM PRIVATE "${date_SOURCE_DIR}/include")
 target_include_directories(http_server SYSTEM PRIVATE ${nlohmann_SOURCE_DIR}/single_include/nlohmann)
