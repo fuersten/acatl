@@ -1,0 +1,27 @@
+{
+    "log" : {
+        "level" : [
+            { "AsyncServer" : 2 },
+            { "HttpServer" : 2 },
+            { "Connection<acatl::net::Socket>" : 2 },
+            { "Connection<acatl::net::SecureSocket>" : 2 }
+        ],
+        "separator" : "|",
+        "syslog" : false
+    },
+    "docroot-path" : "./doc_root",
+    "https" : {
+        "enable" : true,
+        "host" : "127.0.0.1",
+        "port" : 8443,
+        "key-file-path" : "./certs/key.pem",
+        "ca-cert-file-path" : "./certs/server.pem",
+        "ca-file-path" : "/usr/local/etc/libressl/cert.pem",
+        "no-verify" : true
+    },
+    "http" : {
+        "enable" : true,
+        "host" : "127.0.0.1",
+        "port" : 8080
+    }
+}

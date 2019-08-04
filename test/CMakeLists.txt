@@ -1,0 +1,3 @@
+add_subdirectory(acatl)
+add_subdirectory(acatl_application)
+add_subdirectory(acatl_network)
