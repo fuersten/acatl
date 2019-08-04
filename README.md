@@ -6,7 +6,7 @@ A simple helper framework with a couple of utility classes. It also features a n
 Features
 ========
 
-acatl consists of three libraries: acatl, acatl_application and acatl_network.
+acatl consists of four libraries: acatl, acatl_application, acatl_mqtt, and acatl_network.
 
 acatl
 -----
@@ -28,6 +28,11 @@ acatl_application
 - Command line options following the POSIX Utility Conventions
 - Console for interactive shells with history and readline default key bindings
 
+acatl_mqtt
+----------
+
+- MQTT message parser
+
 acatl_network
 -------------
 
@@ -42,12 +47,12 @@ Platforms
 Dependencies
 ============
 
-All dependencies are embedded into the acatl source code.
+All dependencies will be downloaded by cmake automatically.
 
 acatl
 -----
 
-The acatl core library has no dependencies to thirdparty stuff.
+- [date](https://github.com/HowardHinnant/date) for date and timestamp handling
 
 acatl_application
 -----------------
@@ -60,5 +65,4 @@ acatl_network
 
 - [asio](https://think-async.com/Asio/AsioStandalone.html) for networking
 - [nodejs HTTP Parser](https://github.com/nodejs/http-parser) for parsing HTTP
-
 
