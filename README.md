@@ -1,7 +1,7 @@
 acatl
 =====
 
-A simple helper framework with a couple of utility classes. It also features a nearly complete filesystem implementation that follows the C++17 standard.
+A simple helper framework with a couple of utility classes.
 
 Features
 ========
@@ -13,7 +13,7 @@ acatl
 
 The acatl core library can be used withtout the other libraries. Among other usefull stuff the library features:
 
-- C++17 filesystem implementation
+- Partial C++17 filesystem implementation
 - Threadpool
 - String helper
 - Time helper
